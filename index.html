@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NOT JUST A PRETTY FACE</title>
+<meta name="description" content="Unlearning beauty standards. Challenging stereotypes. Redefining beauty.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,600;0,800;1,500&family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div id="progress" aria-hidden="true"></div>
+<header class="nav">
+  <a class="logo" href="#home">NOT JUST A <em>PRETTY FACE</em></a>
+  <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle menu">&#9776;</button>
+  <nav id="navLinks" aria-label="Main">
+    <a href="#home">Home</a>
+    <a href="#sayings">What People Say</a>
+    <a href="#time">Through Time</a>
+    <a href="#reality">Reality</a>
+    <a href="#rights">Your Rights</a>
+    <a href="#arcade">Play</a>
+    <a href="#beyond">Beyond the Mirror</a>
+  </nav>
+</header>
+<main id="main">
+<section id="home" class="hero">
+  <div class="hero-text">
+    <p class="eyebrow">Unlearning Beauty Standards. Challenging Stereotypes. Redefining Beauty.</p>
+    <h1>Who Decided What Beautiful Looks Like?</h1>
+    <p>Media, culture, and gender expectations shape how we see bodies, skin, and faces. These pressures reach women, men, and people of every gender identity, and they can quietly shape how people are treated.</p>
+    <a class="btn" href="#sayings">Explore the Reality</a>
+    <p class="note">&ldquo;Beauty should never be a standard used to measure someone's worth.&rdquo;</p>
+  </div>
+  <div class="collage" id="collage"></div>
+</section>
+
+<section id="sayings" class="band">
+  <h2>The Things People Say</h2>
+  <p class="lead">Tap a statement to tear it apart.</p>
+  <div class="grid" id="sayGrid"></div>
+</section>
+
+<section id="time">
+  <h2>Beauty Through Time</h2>
+  <p class="lead">Watch how ideals change with media, money, and culture.</p>
+  <div class="tl" id="tl"></div>
+  <p class="hint">Swipe or click to see the next period.</p>
+  <p class="note">Beauty ideals also differ across cultures and are not universal. The periods above reflect mostly Western media history.</p>
+</section>
+
+<section id="reality" class="band">
+  <h2>Beauty vs. Reality</h2>
+  <p class="lead">Evidence-based explanations. No invented statistics.</p>
+  <div class="grid" id="factGrid"></div>
+</section>
+
+<section id="rights">
+  <h2>Know Your Rights</h2>
+  <p class="lead">What Philippine law actually covers. These laws do not ban every insulting comment about appearance.</p>
+  <div class="grid" id="lawGrid"></div>
+</section>
+
+<section id="arcade" class="band center">
+  <h2>Fight the Stigma</h2>
+  <p class="lead">Shoot the Stigma Monster's stereotypes before they hit you.</p>
+  <div class="cab">
+    <div class="cab-top">STIGMA SMASH</div>
+    <div class="cab-body">
+      <div class="frame">
+        <div class="a-hud">
+          <span class="lives" id="gLives" role="img" aria-label="Lives"></span>
+          <span class="sc">SCORE <b id="gScore">0</b></span>
+        </div>
+        <div class="a-hp"><span>MONSTER</span><div class="bar"><i id="gHpBar"></i></div><b id="gHpTxt">1000 HP</b></div>
+        <div class="a-screen">
+          <canvas id="game" width="360" height="520" role="img" aria-label="Stigma Smash arcade game screen"></canvas>
+          <div class="a-overlay" id="gOverlay">
+            <h3 id="gTitle">STIGMA SMASH</h3>
+            <p id="gMsg" aria-live="polite">Shoot the stereotypes, dodge the rest, and take down the 1,000 HP monster. You have 3 lives.</p>
+            <button class="btn" id="gStart">START</button>
+          </div>
+        </div>
+      </div>
+      <div class="panel">
+        <button class="a-btn" id="gLeft" aria-label="Move left">&#9664;</button>
+        <button class="a-btn fire" id="gFire" aria-label="Shoot">&hearts;</button>
+        <button class="a-btn" id="gRight" aria-label="Move right">&#9654;</button>
+      </div>
+      <p class="a-help">Keys: arrow keys or A / D to move, Space to shoot. Touch: drag on the screen or use the buttons.</p>
+      <div class="coin" aria-hidden="true"><i></i></div>
+    </div>
+  </div>
+</section>
+
+<section id="beyond" class="center">
+  <h2>Beyond the Mirror</h2>
+  <div class="chips"><span>Bodies change. Worth doesn't.</span><span>Different is not wrong.</span><span>Respect is free.</span><span>You are not a before-and-after photo.</span></div>
+  <p class="lead">Notice the comments you make and the standards you repeat. Choose kindness. Challenge a harmful beauty standard today.</p>
+  <button class="btn" id="remindBtn">A Reminder for You</button>
+  <p class="reminder" id="reminder" aria-live="polite"></p>
+  <blockquote>Beauty is not a requirement for dignity. Respect should never depend on appearance.</blockquote>
+</section>
+</main>
+<footer>
+    <p>NOT JUST A PRETTY FACE &middot; Gender and Society Midterm Project</p>
+
+    <p>
+        Michaela Pauline Deticio &middot;
+        Hermionie Bernabe &middot;
+        Althea Mera Lascota &middot;
+        Maxene Pereira
+    </p>
+
+    <p>Copyright &copy; 2026. Not Just a Pretty Face. All rights reserved.</p>
+</footer>
+<button id="toTop" aria-label="Back to top" hidden>&uarr;</button>
+<script src="js/script.js"></script>
+</body>
+</html>
